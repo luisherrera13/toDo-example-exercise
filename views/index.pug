@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+head
+  meta(charset='utf-8')
+  title
+  link(data-require='bootstrap@3.3.6', data-semver='4.1.3', rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css')
+  link(data-require='bootstrap@3.3.6', data-semver='4.1.3', src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js')
+  style
+    include ../public/style.css
+  script(data-require='jquery', data-semver='3.2.1', src='https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js')
+  script
+    include ../public/script.js
+.col-md-12
+  h1 My Todo List!
+  p Write and submit new tasks, check completed tasks.
+  div(data-role='content')
+    ul#taskListSection.list-group
+      li.list-group-item.active ToDos
+        //input.form-check-label(type='checkbox')
+      //li.list-group-item 1. Example of Existing task
+      //li.list-group-item 2. Example of Existing task
+    br
+    fieldset.ui-grid-a
+      .ui-block-a
+        textarea#taskInputText(placeholder='Enter task', cols='50', maxlength='128')
+      .ui-block-b
+        input#taskBtn.btn.btn-success.btn-sm(type='button', value='Submit')
+        | &nbsp;
+        | &nbsp;
+        input#allBtn.btn.btn-primary.btn-sm(type='button', value='View All')
+        | &nbsp;
+        | &nbsp;
+        input#activeBtn.btn.btn-primary.btn-sm(type='button', value='View Active')
+        | &nbsp;
+        | &nbsp;
+        input#completedBtn.btn.btn-primary.btn-sm(type='button', value='View Completed')
+        | &nbsp;
+        | &nbsp;
+        input#removeBtn.btn.btn-danger.btn-sm(type='button', value='Remove Completed')
+        | &nbsp;
+        | &nbsp;
+        input#removeallBtn.btn.btn-danger.btn-sm(type='button', value='Remove All')
+        
+
+        
